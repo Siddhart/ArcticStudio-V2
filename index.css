@@ -97,9 +97,11 @@ svg:hover{
     font-size: 25px;
 }
 
+.SupportA{
+    color: black;
+}
 .SupportA:hover{
     opacity: 0.5;
-    transform: rotate(90);
 }
 
 .ba{
@@ -137,15 +139,9 @@ table{
     border-radius: 50px;
     border: none;
     font-size: 30px;
-    box-shadow: 20px 5px 40px rgba(124,252,255,1),0px 5px 40px rgba(122,129,255,1),-20px 5px 40px rgba(124,252,255,1);
-    background-image: linear-gradient(-90deg, rgba(124,252,255,1) 0%, rgba(125,129,255,1) 51%, rgba(124,252,255,1) 100%);
+    background-image: linear-gradient(-90deg, rgba(124,252,255,1) 0%, rgba(122,129,255,1) 51%, rgba(223,117,255,1) 100%);
 }
 
 .OrderB:hover{
     transform: scale(1.05);
-}
-
-.carousel{
-    box-shadow: 20px 5px 40px rgba(124,252,255,1),0px 5px 40px rgba(122,129,255,1),-20px 5px 40px rgba(124,252,255,1);
-    background-image: linear-gradient(-90deg, rgba(124,252,255,1) 0%, rgba(1,129,255,1) 51%, rgba(124,252,255,1) 100%);
 }
