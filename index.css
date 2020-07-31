@@ -15,8 +15,10 @@
 
 body, html{
     font-family: 'Montserrat', sans-serif;
-    background: rgb(124,252,255);
-    background: linear-gradient(135deg, rgba(124,252,255,1) 0%, rgba(122,129,255,1) 51%, rgba(223,117,255,1) 100%);
+    
+    background: rgba(43, 44, 62, 1);
+    background: linear-gradient(135deg, rgba(43, 44, 62, 1) 0%, rgba(43, 44, 62, 1) 51%, rgba(43, 44, 62, 1) 100%);
+
     height: 100%;
     margin: 0;
     padding: 0;
@@ -62,6 +64,7 @@ svg{
     border-radius: 50%;
     transform:scale(1);
     background-color: white;
+    border: 2px solid white;
 }
 
 svg:hover{
@@ -69,7 +72,7 @@ svg:hover{
 }
 
 .ToAboutMeA{
-    color: white;
+    color: rgba(129, 203, 212, 1);
 }
 .ToAboutMeA:hover{
     font-size: 35.5px;
@@ -90,6 +93,7 @@ svg:hover{
     padding: 25px;
     font-size: 50px;
     text-decoration: underline;
+    color: rgba(129, 203, 212, 1);
 }
 
 .AUarticle{
@@ -98,7 +102,7 @@ svg:hover{
 }
 
 .SupportA{
-    color: black;
+    color: rgba(129, 203, 212, 1);
 }
 .SupportA:hover{
     opacity: 0.5;
@@ -135,13 +139,20 @@ table{
 .OrderB{
     width: 600px;
     height: 75px;
-    background-color: purple;
-    border-radius: 50px;
+    color: black;
+    font-weight: bold;
     border: none;
+    border-radius: 25px;
     font-size: 30px;
-    background-image: linear-gradient(-90deg, rgba(124,252,255,1) 0%, rgba(122,129,255,1) 51%, rgba(223,117,255,1) 100%);
+    background-color: rgba(129, 203, 212, 1);
 }
 
 .OrderB:hover{
     transform: scale(1.05);
+}
+
+.BreakLine{
+    height: 2px;
+    width: 30%;
+    background-color: rgba(129, 203, 212, 1);
 }
