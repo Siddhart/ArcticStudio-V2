@@ -16,8 +16,8 @@
 body, html{
     font-family: 'Montserrat', sans-serif;
     
-    background: rgb(0, 0, 0);
-    background: linear-gradient(135deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 100%);
+    background: rgb(35, 39, 42);
+    background: linear-gradient(135deg, rgb(35, 39, 42) 0%, rgb(35, 39, 42) 100%);
 
     height: 100%;
     margin: 0;
@@ -25,7 +25,7 @@ body, html{
     scroll-behavior: smooth;
     overflow-x: hidden;
 
-    color: white;
+    color: #4eecde;
 }
 
 h1 span{
@@ -39,7 +39,7 @@ h1 span{
 
 .StudioName{
     font-size: 50px;
-    color: white;
+    color: #4eecde;
 }
 .heroimg {
 
@@ -72,11 +72,11 @@ svg:hover{
 }
 
 .here{
-    color: rgba(31, 231, 255, 1);
+    color: #4eecde;
 }
 
 .ToAboutMeA{
-    color: rgba(31, 231, 255, 1);
+    color: #4eecde;
 }
 .ToAboutMeA:hover{
     font-size: 35.5px;
@@ -96,7 +96,7 @@ svg:hover{
     text-align: center;
     padding: 25px;
     font-size: 50px;
-    color: rgba(31, 231, 255, 1);
+    color: #4eecde;
 }
 
 .AUarticle{
@@ -105,7 +105,7 @@ svg:hover{
 }
 
 .SupportA{
-    color: rgba(31, 231, 255, 1);
+    color: white;
 }
 .SupportA:hover{
     opacity: 0.5;
@@ -136,12 +136,12 @@ table{
 .OrderB{
     width: 600px;
     height: 75px;
-    color: black;
+    color: white;
     font-weight: bold;
     border: none;
     border-radius: 25px;
     font-size: 30px;
-    background-color: rgba(31, 231, 255, 1);
+    background-color: #29abe0;
 }
 
 .OrderB:hover{
@@ -151,7 +151,7 @@ table{
 .BreakLine{
     height: 2px;
     width: 30%;
-    background-color: rgba(31, 231, 255, 1);
+    color: white;
     border-radius: 50px;
 }
 
@@ -161,4 +161,12 @@ table{
   height: 5%;
   color: white;
   text-align: center;
+  font-size: 25px;
+}
+
+.Coffee{
+    text-align: center;
+}
+.Coffee:hover{
+    transform: scale(1.1);
 }
