@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+
+<header>
+  <meta name="viewport" content="width=1024">
+</header>
+
+<head>
+</head>
+
+<style>
+    @import url(https://fonts.googleapis.com/css?family=Montserrat:400,500,80);
+  @media screen and (max-width: 900px) {
+    .column {
+      width: 50%;
+    }
+  }
+  
+  
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
+
+    body {
+        font-family: 'Montserrat', sans-serif;
+        background-color: rgb(35, 39, 42);
+        background: linear-gradient(135deg, rgb(35, 39, 42) 0%, rgb(35, 39, 42) 100%);
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        scroll-behavior: smooth;
+        overflow-x: hidden;
+        color:white;
+    }
+    
+    html {
+        font-family: 'Montserrat', sans-serif;
+        background-color: rgb(35, 39, 42);
+        background: linear-gradient(135deg, rgb(35, 39, 42) 0%, rgb(35, 39, 42) 100%);
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        scroll-behavior: smooth;
+        overflow-x: hidden;
+        color:white;
+    }
+    
+    .Bot-Name {
+        text-align: center;
+        margin: 50px;
+        color: #4eecde;
+    }
+    
+    .Bot-Img {
+        width: 200px;
+        display: block;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: black;
+        border-radius: 50%;
+        border: 2px black solid;
+    }
+    
+    .Bot-Img:hover {
+        transform: scale(1.05);
+    }
+    
+    .Description {
+        text-align: center;
+        margin: 25px;
+        font-size: 25px;
+    }
+    
+    .Prefix-Container {
+        margin: 5px;
+        width: auto;
+        text-align: center;
+        overflow: hidden;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    
+    .col:hover {
+        transform: scale(1.30);
+    }
+    
+    .col {
+        padding: 5px;
+        transform: scale(1.25);
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+    
+    .hr {
+        width: 55%;
+        height: 2.5px;
+        background-color: white;
+        border-radius: 5px;
+        margin-top: 50px;
+    }
+    
+    .Full-Description {
+        text-align: center;
+        font-size: 35px;
+        margin: 35px;
+        color: #4eecde;
+    }
+    .Full-Description-Text{
+        text-align: center;
+        font-size: 20px;
+    }
+
+    table {
+        border-radius:10px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 25px;
+      }
+      
+      td, th {
+        border: 1px solid #35383d;
+        text-align: left;
+        padding: 10px;
+        color: white;
+      }
+      
+      tr:nth-child(even) {
+        background-color: #35383d;
+        color:white;
+      }
+      tr:nth-child(odd) {
+        background-color: #3a3e42;
+        color:white;
+      }
+
+      .Images img{
+          display: block;
+          margin-right: auto;
+          margin-left: auto;
+          text-align: center;
+          width: 560px;
+          height: 315px;
+          border-radius: 25px;
+      }
+      .A{
+        color: #4eecde;
+      }
+      .A:hover{
+        color: black;
+      }
+      .white{
+          color:white;
+      }
+
+      td{
+          color: white;
+      }
+</style>
+
+<body>
+    <h1 style="color:#4eecde" class="Bot-Name">Rocket Launch Tracker</h1>
+
+    <img class="Bot-Img" alt="Rocket Launch Tracker" src="https://images.discordapp.net/avatars/697386812078817300/792962afe0808f939770af398d805aaf.png?size=512" />
+
+    <p class="This bot will notify the users in your server when a new rocket launch is announced."</p>
+
+    <div class="Prefix-Container">
+        <div class="row">
+            <div class="col">
+                    <img src="https://top.gg/api/widget/status/697386812078817300.svg?noavatar=true" alt="Rocket Launch Tracker" />
+            </div>
+            <div class="col">
+                    <img src="https://top.gg/api/widget/servers/697386812078817300.svg?noavatar=true" alt="Rocket Launch Tracker" />
+            </div>
+            <div class="col">
+                    <img src="https://top.gg/api/widget/upvotes/697386812078817300.svg?noavatar=true" alt="Rocket Launch Tracker" />
+            </div>
+            <div class="col">
+                    <img src="https://top.gg/api/widget/lib/697386812078817300.svg?noavatar=true" alt="Rocket Launch Tracker" />
+            </div>
+        </div>
+    </div>
+    <hr class="hr">
+    <p class="Full-Description">Description:</p>
+    <div class="Full-Description-Text white">
+        <p>
+            The Rocket Launch Tracker will get the latest planned rocket launches and it will send a message in your channel when a new launch was added.
+        </p>
+    </div>
+    <hr  class="hr">
+    <p class="Full-Description">Commands:</p>
+    <p style="text-align:center">Here you can find a table with all my commands.</p>
+    <div class="Full-Description-Text">
+        <table>
+            <tr>
+              <th>Command</th>
+              <th>What does it do?</th>
+            </tr>
+            <tr>
+              <td>RT track</td>
+              <td>Get info about the recently added launch.</td>
+            </tr>
+            <tr>
+                <td>RT get [number from 1 to 5]</td>
+                <td>Get the latest added launches.</td>
+            </tr>
+            <tr>
+                <td>RT start</td>
+                <td>Setup the notifications in your channel (only for users with admin permissions).</td>
+            </tr>
+            <tr>
+                <td>RT stop</td>
+                <td>Stop the notifications in your server. (only for users with admin permissions).</td>
+            </tr>
+            <tr>
+                <td>RT help</td>
+                <td>Get all the commands you can use.</td>
+            </tr>
+          </table>
+    </div>
+    <hr class="hr">
+    <p class="Full-Description">Examples:</p>
+    <p class="white" style="text-align:center">Here you can find some previews of the things I send!</p>
+    <div class="Images">
+        <img src="https://cdn.discordapp.com/attachments/698531018826580069/741390158443577404/Untitled_design_5.png"/>
+    </div>
+
+    <hr  class="hr">
+    <p class="Full-Description">Support Us :</p>
+    <p class="white" style="text-align:center">Hey all the bots we make are for non-profit. If you want to help us pay for the hosting and for our upcomming projects you can donate via <a class="A" href="https://ko-fi.com/arctic_studio" target="_blank">Ko-fi</a> or <a class="A" href="https://paypal.me/ArcticStudioPayPal" target="_blank">PayPal.</a></p>
+    <p class="white" style="text-align:center">You can also join our amazing community <a class="A"href="https://discordapp.com/invite/wzF9qfC" target="_blank">here</a> and meet new people!</p>
+</body>
+
+<footer>
+</footer>
+
+</html>
