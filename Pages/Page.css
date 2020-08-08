@@ -156,3 +156,19 @@
     td{
         color: white;
     }
+
+    .ICON{
+      background-color: white;
+      border-radius: 50%;
+      border: 2px white solid;
+      width: 75px;
+      height: 75px;
+      position: sticky;
+      display: block;
+      margin-left: 25px;
+      margin-top: 25px;
+    }
+
+    .ICON:hover{
+     transform: scale(1.05);
+    }
