@@ -75,12 +75,17 @@ svg:hover{
     color: #4eecde;
 }
 
+.here:hover{
+    color: white;
+}
+
 .ToAboutMeA{
     color: #4eecde;
 }
 .ToAboutMeA:hover{
     font-size: 35.5px;
     text-decoration: none;
+    color: white;
 }
 
 .ToIcon:hover{
@@ -170,3 +175,7 @@ table{
 .Coffee:hover{
     transform: scale(1.1);
 }
+
+a:hover{
+    color: white;
+  }

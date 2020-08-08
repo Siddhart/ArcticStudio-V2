@@ -147,7 +147,7 @@
       color: #4eecde;
     }
     .A:hover{
-      color: black;
+      color: white;
     }
     .white{
         color:white;
@@ -171,4 +171,8 @@
 
     .ICON:hover{
      transform: scale(1.05);
+    }
+
+    a:hover{
+      color: white;
     }
