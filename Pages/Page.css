@@ -49,9 +49,9 @@
       text-align: center;
       margin-left: auto;
       margin-right: auto;
-      background-color: black;
+      background-color: rgb(35, 39, 42);
       border-radius: 50%;
-      border: 2px black solid;
+      border: 2px white solid;
   }
   
   .Bot-Img:hover {
