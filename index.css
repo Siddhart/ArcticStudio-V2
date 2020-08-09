@@ -170,6 +170,11 @@ table{
 }
 
 .Coffee{
+    width: fit-content;
+    display: block;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
     text-align: center;
 }
 .Coffee:hover{
