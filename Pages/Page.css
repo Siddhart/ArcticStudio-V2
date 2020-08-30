@@ -176,3 +176,22 @@
     a:hover{
       color: white;
     }
+
+.InviteButton{
+  display: block;
+  text-align:center;
+  margin: 25px;
+}
+.InviteButton a button{
+  width: 100px;
+  height: 25px;
+  font-size: 20px;
+  border: none;
+  border-radius: 25px;
+  color: #4eecde;
+  background-color: #3a3e42;
+}
+.InviteButton a button:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}
