@@ -27,9 +27,19 @@
 
     <body> 
         <div class="TEXT" style="height: 50%;">
-            <h1 style="color:white; text-align:center">:(</h1>
-            <h1 style="color: white;text-align:center;">Hmmmm it looks like that page doesn't exists.</h1>   
+            <h1 id="Smiley" class="Nothappy" style="color:white; text-align:center"></h1>
+            <h1 id="Message" style="color: white;text-align:center;"></h1>   
             <a href="./index.html" style="color: aqua; text-align: center;"><h2>Go back to the home page.</h2></a>
         </div>
     </body>
 </html>
+
+<script>
+    var Text = ["Hmmmm it looks like that page doesn't exists.","I can't find that page.","I think that page doens't exists.","I couldn't find that page.","Error: 404;","I don't think this page exists.","Sorry, I can't find this page.","I looked everywhere but i couldn't find this page."]
+    var num = Math.floor(Math.random() * Text.length) + 1 
+    document.getElementById('Message').innerHTML = Text[num - 1];
+
+    var SmileyArray = [":(",":SadEmojie:"]
+    var num = Math.floor(Math.random() * SmileyArray.length) + 1 
+    document.getElementById('Smiley').innerHTML = SmileyArray[num - 1];
+</script>
