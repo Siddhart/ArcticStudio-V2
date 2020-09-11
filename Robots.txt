@@ -1,4 +1,5 @@
 User-agent: *
 Disallow: /
 
+
 Sitemap: https://arcticstudio.info/sitemap.xml
