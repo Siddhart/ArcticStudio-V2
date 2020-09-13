@@ -215,13 +215,12 @@
  console.log("Join our Discord server https://discordapp.com/invite/wzF9qfC")
 </script>
 
-<script>
-    
+<script>  
     fetch('https://api.arcticstudio.info:8081/api/BotMembers', {mode:'cors'})//replace with subdomain link. and then hope it works cus its in a fking fetch function oef
         .then(response => {   
             var COUNT  = 0;
-            var json = response.json()
-            COUNT += Number(json.Hermes[(Object.keys(json.Hermes).length)-1].Members)
+            response.json().then((json) =>{
+                COUNT += Number(json.Hermes[(Object.keys(json.Hermes).length)-1].Members)
             COUNT += Number(json['Turnip notifyer'][(Object.keys(json['Turnip notifyer']).length)-1].Members)
             COUNT += Number(json["ACNH Villager Wiki"][(Object.keys(json["ACNH Villager Wiki"]).length)-1].Members)
             COUNT += Number(json["Rocket Launch Tracker"][(Object.keys(json["Rocket Launch Tracker"]).length)-1].Members)
@@ -232,6 +231,7 @@
             COUNT += Number(json["Quote of the day"][(Object.keys(json["Quote of the day"]).length)-1].Members)
             COUNT += Number(json["Valorant Wiki"][(Object.keys(json["Valorant Wiki"]).length)-1].Members)
             document.getElementById("Users").innerText = COUNT + " users";
+                })
         })
 </script>
 
