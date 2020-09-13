@@ -230,8 +230,13 @@
             COUNT += Number(json["Superhero Wiki"][(Object.keys(json["Superhero Wiki"]).length)-1].Members)
             COUNT += Number(json["Quote of the day"][(Object.keys(json["Quote of the day"]).length)-1].Members)
             COUNT += Number(json["Valorant Wiki"][(Object.keys(json["Valorant Wiki"]).length)-1].Members)
-            document.getElementById("Users").innerText = COUNT + " users";
-                })
+
+            if(COUNT < 750000){
+                document.getElementById("Users").innerText = "750.000+ users";
+            }else{
+                document.getElementById("Users").innerText = COUNT + "+ users";
+                }
+            })
         })
 </script>
 
