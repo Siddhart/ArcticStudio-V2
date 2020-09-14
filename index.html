@@ -100,7 +100,7 @@
              <p class="AUarticle">Arctic Studio was created in 2018 by two friends that met each other trough a game jam.</p>
              <p class="AUarticle">Arctic Studio was originally a game development studio. We now also work on other projects such as websites and discord bots.</p>
              <p class="AUarticle">Our discord bots are being used by <strong id="Users">750.000+ users</strong>.</p>
-             <p class="AUarticle">We now have an amazing community with 500+ people and its expanding every day!</p>
+             <p class="AUarticle">We now have an amazing community with <strong id="DiscordUsers">500+ people</strong> and its expanding every day!</p>
              <br>
              <p class="AUarticle">You can also join our official Discord Server <a title="Discord Server" class="here" href="https://discordapp.com/invite/wzF9qfC" target="_blank">here</a>.</p>
              <p class="AUarticle">Almost all the projects we work on are for non-profit. If you like our projects and wish to support us you can, by supporting us on <a title="Ko-fi" class="here" target="_blank" href="https://ko-fi.com/arctic_studio">Ko-fi</a>. You can also donate us via <a title="PayPal" class="here" target="_blank" href="https://www.paypal.com/paypalme/ArcticStudioPayPal">PayPal</a>.</p>    
@@ -212,7 +212,7 @@
 
  console.log(Arctic)
  console.log("Hey :D")
- console.log("Join our Discord server https://discordapp.com/invite/wzF9qfC")
+ console.log("Join our Official Discord server https://discordapp.com/invite/wzF9qfC")
 </script>
 
 <script>  
@@ -232,6 +232,13 @@
             COUNT += Number(json["Valorant Wiki"][(Object.keys(json["Valorant Wiki"]).length)-1].Members)
                 
             document.getElementById("Users").innerText = Math.round(COUNT/1000)*1000 + "+ users";
+
+            var DiscordUs = Number(json["Users"])
+            if(DiscordUs < 500){
+                document.getElementById("DiscordUsers").innerText = "500+ people"
+            }else{
+            document.getElementById("DiscordUsers").innerText = ((Math.round(DiscordUs/100)*100) + "+ people")
+            }
             })
         })
 </script>
