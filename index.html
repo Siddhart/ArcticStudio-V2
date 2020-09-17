@@ -233,12 +233,15 @@
                 
             document.getElementById("Users").innerText = Math.round(COUNT/1000)*1000 + "+ users";
 
-            var DiscordUs = Number(json["Users"])
-            if(DiscordUs < 500){
-                document.getElementById("DiscordUsers").innerText = "500+ people"
-            }else{
-            document.getElementById("DiscordUsers").innerText = ((Math.round(DiscordUs/50)*50) + "+ people")
+            if(COUNT < 750000){
+                document.getElementById("Users").innerText = 750000 + "+ users"
             }
+            var DiscordUs = Number(json["Users"])
+                if(DiscordUs < 500){
+                    document.getElementById("DiscordUsers").innerText = "500+ people"
+                }else{
+                document.getElementById("DiscordUsers").innerText = ((Math.round(DiscordUs/50)*50) + "+ people")
+                }
             })
         })
 </script>
