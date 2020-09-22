@@ -99,7 +99,7 @@
              <br>
              <p class="AUarticle">Arctic Studio was created in 2018 by two friends that met each other trough a game jam.</p>
              <p class="AUarticle">Arctic Studio was originally a game development studio. We now also work on other projects such as websites and discord bots.</p>
-             <p class="AUarticle">Our discord bots are being used by <strong id="Users">750.000+ users</strong>.</p>
+             <p class="AUarticle">Our discord bots are being used by <strong id="Users">1.000.000+ users</strong>.</p>
              <p class="AUarticle">We now have an amazing community with <strong id="DiscordUsers">500+ people</strong> and its expanding every day!</p>
              <br>
              <p class="AUarticle">You can also join our official Discord Server <a title="Discord Server" class="here" href="https://discordapp.com/invite/wzF9qfC" target="_blank">here</a>.</p>
@@ -233,8 +233,8 @@
                 
             document.getElementById("Users").innerText = Math.round(COUNT/1000)*1000 + "+ users";
 
-            if(COUNT < 750000){
-                document.getElementById("Users").innerText = 750000 + "+ users"
+            if(COUNT < 1000000){
+                document.getElementById("Users").innerText ="1.000.000+ users"
             }
             var DiscordUs = Number(json["Users"])
                 if(DiscordUs < 500){
