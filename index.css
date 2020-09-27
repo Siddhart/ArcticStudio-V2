@@ -1,17 +1,162 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,500,80);
 
-@media screen and (max-width: 900px) {
-    .column {
-      width: 50%;
+@media screen and (min-width: 600px) {
+    .StudioName{
+        font-size: 50px;
+        color: #4eecde;
+        margin-bottom: 50px;
+    }
+
+    .ToAboutMeA{
+        color: #4eecde;
+        font-size: 35px;
+    }
+
+    .AUarticle{
+        color: white;
+        text-align: center;
+        font-size: 25px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    svg{
+        border-radius: 50%;
+        transform:scale(1);
+        background-color: white;
+        border: 2px solid white;
+    }
+
+    table{
+        margin-top: 100px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .ClickForMoreInfo{
+        font-size: 25px;
+    }
+
+    .Coffee{
+        width: fit-content;
+        display: block;
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+    }
+
+    .sidd{
+        font-size: 25px;
     }
   }
   
-  
-  @media screen and (max-width: 600px) {
-    .column {
-      width: 100%;
+@media screen and (max-width: 600px) {
+    .StudioName{
+        font-size: 33px;
+        color: #4eecde;
+        margin-bottom: 10px;
     }
-  }
+
+    .ToAboutMeA{
+        color: #4eecde;
+        font-size: 27px;
+    }
+
+    .AUarticle{
+        color: white;
+        text-align: center;
+        font-size: 20px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    svg{
+        border-radius: 50%;
+        transform:scale(1);
+        background-color: white;
+        border: 2px solid white;
+        margin-top: 25px;
+    }
+
+    table{
+        margin-bottom: 25px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .ClickForMoreInfo{
+        font-size: 17px;
+    }
+
+    .Coffee{
+        width: fit-content;
+        display: block;
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+    }
+
+    .sidd{
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1025px){
+    .StudioName{
+        font-size: 50px;
+        color: #4eecde;
+        margin-bottom: 10px;
+    }
+
+    .ToAboutMeA{
+        color: #4eecde;
+        font-size: 35px;
+    }
+
+    .AUarticle{
+        color: white;
+        text-align: center;
+        font-size: 30px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    svg{
+        border-radius: 50%;
+        transform:scale(1);
+        background-color: white;
+        border: 2px solid white;
+        margin-top: 25px;
+    }
+
+    table{
+        margin-bottom: 25px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .ClickForMoreInfo{
+        font-size: 25px;
+    }
+
+    .Coffee{
+        width: fit-content;
+        display: block;
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+        margin-top: 25px;
+        transform: scale(1.5);
+    }
+
+    .sidd{
+        font-size: 24px;
+    }
+}
+
 
 body, html{
     font-family: 'Montserrat', sans-serif;
@@ -28,21 +173,19 @@ body, html{
     color: #4eecde;
 }
 
+.ToAboutMeA{
+    color: #4eecde;
+}
+
 h1 span{
     display: inline-flex;
   }
   
-
 .center{
     text-align: center;
 }
 
-.StudioName{
-    font-size: 50px;
-    color: #4eecde;
-}
 .heroimg {
-
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -60,13 +203,6 @@ h1 span{
     
 }
 
-svg{
-    border-radius: 50%;
-    transform:scale(1);
-    background-color: white;
-    border: 2px solid white;
-}
-
 svg:hover{
     transform: scale(1.1);
 }
@@ -79,9 +215,6 @@ svg:hover{
     color: white;
 }
 
-.ToAboutMeA{
-    color: #4eecde;
-}
 .ToAboutMeA:hover{
     font-size: 35.5px;
     text-decoration: none;
@@ -93,10 +226,6 @@ svg:hover{
     opacity: 0.5;
 }
 
-.AboutUs{
-    color: white;
-}
-
 .AUtitle{
     text-align: center;
     padding: 25px;
@@ -104,10 +233,7 @@ svg:hover{
     color: #4eecde;
 }
 
-.AUarticle{
-    text-align: center;
-    font-size: 25px;
-}
+
 
 .SupportA{
     color: white;
@@ -121,11 +247,7 @@ svg:hover{
 }
 
 
-table{
-    margin-top: 100px;
-    margin-left: auto;
-    margin-right: auto;
-}
+
 
 .OurProjects{
     color: white;
@@ -169,14 +291,7 @@ table{
   font-size: 25px;
 }
 
-.Coffee{
-    width: fit-content;
-    display: block;
-    text-align: center;
-    margin-right: auto;
-    margin-left: auto;
-    text-align: center;
-}
+
 .Coffee:hover{
     transform: scale(1.1);
 }
