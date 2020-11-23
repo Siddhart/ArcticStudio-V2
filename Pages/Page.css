@@ -195,3 +195,26 @@
   transform: scale(1.1);
   cursor: pointer;
 }
+
+.BreakLine{
+  width: 55%;
+  height: 2.5px;
+  background-color: white;
+  border-radius: 5px;
+  margin-top: 0px;
+}
+
+.footer{
+width: 100%;
+display: inline-block;
+height: 5%;
+color: white;
+text-align: center;
+font-size: 25px;
+margin-bottom: 100px;
+}
+
+.footer a{
+  color: #4eecde;
+  text-decoration: underline;
+}
