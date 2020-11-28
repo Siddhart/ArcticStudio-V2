@@ -225,7 +225,7 @@
 </script>
 
 <script>  
-    fetch('https://api.arcticstudio.info:8443/api/BotMembers', {mode:'cors'})//replace with subdomain link. and then hope it works cus its in a fking fetch function oef
+    fetch('https://api.arcticstudio.info:8443/api/BotMembers', {mode:'cors'})
         .then(response => {   
             response.json().then((json) =>{
             var COUNT  = 0;
@@ -238,10 +238,7 @@
             COUNT += Number(json["Free Games Bot"][(Object.keys(json["Free Games Bot"]).length)-1].Members)
             COUNT += Number(json["Superhero Wiki"][(Object.keys(json["Superhero Wiki"]).length)-1].Members)
             COUNT += Number(json["Quote of the day"][(Object.keys(json["Quote of the day"]).length)-1].Members)
-            COUNT += Number(json["Valorant Wiki"][(Object.keys(json["Valorant Wiki"]).length)-1].Members)
-                
-            
-            //BACKUP FOR IF THE API FAILS WHAT HAPPENS SOMETIMES
+            COUNT += Number(json["Valorant Wiki"][(Object.keys(json["Valorant Wiki"]).length)-1].Members)      
 
             if(COUNT < 1000000 || !COUNT){
                 document.getElementById("Users").innerText ="1.000.000+ users"
@@ -256,8 +253,6 @@
                 document.getElementById("DiscordUsers").innerText = ((Math.round(DiscordUs/50)*50) + "+ people")
                 }
             })
-
-            //BACKUP FOR IF THE API FAILS WHAT HAPPENS SOMETIMES
         })
 </script>
 
